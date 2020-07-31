@@ -86,16 +86,34 @@ function take_input(position, choices) {
     $("#door0").click(function () {
         player_position = c['A'];
         console.log(player_position);
+
+        document.getElementById('door0').classList.add('red-glow');
+        setTimeout(function() { document.getElementById('door0').classList.remove('red-glow')}, 800);
+
+        $('#situation_text').fadeOut().fadeIn();     
+
         interface(player_position, choices);
     });
     $("#door1").click(function () {
         player_position = c['B'];
         console.log(player_position);
+
+        document.getElementById('door1').classList.add('red-glow');
+        setTimeout(function() { document.getElementById('door1').classList.remove('red-glow')}, 800);
+
+        $('#situation_text').fadeOut().fadeIn();
+
         interface(player_position, choices);
     });
     $("#door2").click(function () {
         player_position = c['C'];
         console.log(player_position);
+
+        document.getElementById('door2').classList.add('red-glow');
+        setTimeout(function() { document.getElementById('door2').classList.remove('red-glow')}, 800);
+
+        $('#situation_text').fadeOut().fadeIn();
+
         interface(player_position, choices);
     })        
 
